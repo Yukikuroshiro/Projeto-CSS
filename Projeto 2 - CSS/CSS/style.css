@@ -1,0 +1,389 @@
+@font-face{
+    font-family: Trajanus;
+    src: url(../fonts/TrajanusBricks.TTF);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+a:active{
+    color: #000000;
+    text-decoration: none;
+    
+}
+a:link{
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+a:link:hover{
+    color: #000000;
+    text-decoration: none;
+    
+}
+a:visited{
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+/*CLASSES GLOBAIS DO SITE*/
+.conteudo{
+    width: 1300px;
+    height: inherit; 
+    padding-top: 10px;
+}
+.backgroundImg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Centraliza um elemento HTML no meio da tela*/
+.centerObj{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.fullImg{
+    height: inherit;
+    width: inherit;
+    border: solid  black 1px;
+}
+/*Prende os elementos para não se alterarem com o zoom*/
+.alturaAutomatica{
+    height: auto;
+    overflow: hidden;
+}
+/*Padronização das tags*/
+h1, h2{
+    font-family: Trajanus;
+    font-size: 28px;
+    color: #000000;
+    width: 100%;
+    height: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: lowercase;
+}
+p{
+    font-family: verdana;
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 24px;
+    text-transform: none;
+ }
+
+/*SEÇÃO DO HEADER*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: RGBA(0,0,0,1);
+    position: fixed;
+}
+#logo{
+    height: 65px;
+    width: 200px;
+    float: left;
+}
+#logo:hover{
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#menus{
+    width: 600px;
+    height: 60px;
+    float: right;
+}
+#menu{
+    width: 500px;
+    height: 60px;     
+}
+
+.menuItens{
+    width: 120px;
+    height: 50px;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 15px;
+    font-family: Trajanus;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    list-style: none;
+    list-style-position: inside;
+    text-transform: lowercase;
+}
+
+.menuItens:hover{
+    background-color: white;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+
+/*SEÇÃO DO BANNER*/
+#primeiroBanner{
+    width: 100%;
+    height: 600px;
+    background-color: RGBA(13, 196, 217,0.7);
+    background-image: url(../imagens/banner.jpg);
+    padding-top: 350px;
+}
+
+/*SEÇÃO DO CONTEUDO*/
+#sobre{
+    width: 100%;
+    min-height: 600px;
+    background-color: #ffffff;
+    border-top: solid 4px #000000;
+}
+#sobreImg{
+    margin-left: 50px;
+    height: 500px;
+    width: 400px;
+/*    background-color: aquamarine;*/
+    margin-top: 50px;
+    float: left;
+}
+#sobreTexto{
+    min-height: 500px;
+    overflow: hidden;
+    width: 700px;
+/*    background-color: olivedrab;*/
+    margin-top: 50px;
+    margin-left: 150px;
+    float: left;
+}
+#sobreTexto h2{
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/*SEGUNDA LINHA, SEÇÃO DA HISTÓRIA*/
+
+#historia{
+    width: 100%;
+    min-height: 600px;
+    background-color: #3d3d3d;
+    padding-top: 50px;
+    border-top: solid 3px #000000;
+}
+#historiaTexto{
+    width: 750px;
+    min-height: 500px;
+    overflow: hidden;
+    /*background-color: ghostwhite;*/
+    margin-left: 50px;
+    float: left;
+}
+#historiaTexto h2{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: normal;
+}
+#historiaTexto p{
+    color: #ffffff;
+}
+#historiaImagem{
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+/*    background-color: darkslategrey;*/
+    float: left;
+}
+
+/* SEÇÃO JOGABILIDADE*/
+
+#jogabilidade{
+    width: 100%;
+    min-height: 600px;
+    background-color: #292929;
+    border-top: solid 3px #000000;
+}
+#jogabilidadeImagem{
+    width: 500px;
+    height: 600px;
+    float: left;
+}
+#jogabilidadeImagem img{
+    width: 500px;
+    height: 400px;
+/*    background-color: aqua;*/
+    margin-top: 100px;
+}
+#jogabilidadeTexto{
+    width: 750px;
+    min-height: 600px;
+    overflow: hidden;
+    margin-left: 50px;
+    float: left;
+    background-color: #000000;
+}
+#jogabilidadeTextoContainer{
+    height: 400px;
+    width: 600px;
+    margin-top: 100px;
+}
+#jogabilidadeTextoContainer h2{
+    background-color: #3d3d3d;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+#jogabilidadeTextoContainer p{
+    color: #ffffff;
+}
+#segundoBanner{
+    width: 100%;
+    height: 650px;
+    background-color: RGBA(13, 196, 217,0.7);
+    background-image: url(../imagens/banner2.jpg);
+    padding-top: 350px;
+}
+
+/*Seção da compra*/
+
+#compra{
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    background-color: #363534;
+    padding-top: 50px;
+    border-top: solid 3px #000000;
+}
+
+#compraTexto{
+    min-height: 500px;
+    overflow: hidden;
+    width: 600px;
+    float: left;
+}
+#compraTexto h2{
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 10px;
+}
+#compraTexto p{
+    color: #ffffff;
+}
+aside{
+    width: 500px;
+    min-height: 500px;
+    overflow: hidden;
+    background-color: #16212e;
+    float: left;
+    margin-left: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+#logoDoJogo{
+    margin-top: 30px;
+    width: 250px;
+    height: 150px;
+    border: solid 1px #000000;
+}
+#compraIcone{
+    height: 50px;
+    width: 100%;
+    background-color: #181f27;
+    text-align: center;
+    border-top-left-radius: 20px;
+}
+#compraIcone img{
+    width: 150px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+aside p{
+    font-size: 14px;
+    width: 450px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #ffffff; 
+}
+#compraButton{
+    margin-left: auto;
+    margin-right: 30px;
+    background-color:#6fa720;
+    width: 100px;
+    height: 40px;
+    border: solid 2px #000000; 
+}
+#compraButton:hover{
+    background-color: #daebbe;
+    cursor: pointer;
+    width: 105px;
+    height: 45px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+#compraButton h6{
+    font-family: verdana;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/*SEção do rodapé*/
+footer{
+    width: 100%;
+    min-height:100px;
+    overflow: hidden;
+    background-color: #18181a;
+}
+#redesLinha{
+    width: 500px;
+    height: 50px;
+}
+.redeSociais{
+    float: left;
+    margin-left: 100px;
+    height: 40px;
+    width: 40px;
+}
+.iconeImg{
+    width: inherit;
+    height: inherit;
+}
+.iconeImg img:hover{
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    transition: 0.1s;
+    border-radius: 50px;
+    border: solid #000000 2px; 
+}
+#rodapeTexto{
+    font-size: 12px;
+    color: #ffffff;
+    width: 700px;
+    height: 60px;
+}
